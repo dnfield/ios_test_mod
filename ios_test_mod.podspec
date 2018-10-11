@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.pod_target_xconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.ios.deployment_target = '8.0'
-  s.preserve_path = 'lib/main.dart'
+  s.preserve_paths = 'lib/main.dart'
   s.prepare_command = <<-CMD
     flutter build ios --debug
   CMD
