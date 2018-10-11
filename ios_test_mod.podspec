@@ -9,14 +9,13 @@ Pod::Spec.new do |s|
   s.homepage         = 'http://'
   s.source           = { :path => './.ios' }
   s.summary           = 'A Flutter iOS Module'
-  s.dependency 'battery'
-  s.dependency 'Flutter'
   s.resources = '.ios/Flutter/flutter_assets'
   s.vendored_frameworks = '.ios/Flutter/App.framework'
-  s.xcconfig = { "ENABLE_BITCODE" => "NO" }
+  s.xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+  s.pod_target_xconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.ios.deployment_target = '8.0'
+  s.preserve_path = '.'
   s.prepare_command = <<-CMD
     flutter build ios --debug
-    ruby .ios/Flutter/podhelper.rb
   CMD
 end
