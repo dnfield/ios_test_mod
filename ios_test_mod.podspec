@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author           = ''
   s.license          = 'flutter_assets/LICENCE'
   s.homepage         = 'http://'
-  s.source           = { :path => './.ios' }
+  s.source           = { :path => '.' }
   s.summary           = 'A Flutter iOS Module'
   s.resources = '.ios/Flutter/flutter_assets'
   s.vendored_frameworks = '.ios/Flutter/App.framework'
