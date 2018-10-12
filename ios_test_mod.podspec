@@ -14,8 +14,7 @@ Pod::Spec.new do |s|
   s.xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.ios.deployment_target = '8.0'
-  s.preserve_paths = './podhelper.rb'
-  s.preserve_paths = '.'
+  s.preserve_paths = '**/*'
   s.prepare_command = <<-CMD
     flutter build ios --debug
   CMD
