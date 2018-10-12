@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.preserve_paths = '**/*'
   s.prepare_command = <<-CMD
-    flutter build ios --debug
+    flutter build ios
   CMD
 end
